@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* margin: 0 auto; */
+} 
+
+body{
+    background-color: #f5f5f5;
+}
+
+header{
+    /* margin: 0 auto; */
+    width: 375px;
+    height: 80px;
+    background: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 22px 0 22px;
+}
+
+.header > img{
+    width:75px;
+    height:53px;
+
+}
+
+.members-button ion-icon {
+    height:45px;
+    width:45px;
+}
+
+main{
+    margin-top:26px;
+    height:587px;
+    width: 375px;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+
+.chat{
+    width:100%;
+    min-height:40px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    margin-bottom:4px;
+    padding: 4px 8px;
+}
+
+.enter{
+    background: #DCDCDC;
+}
+
+.say {
+    background: white;
+}
+
+.private{
+    background: #FFDEDE;
+}
+.chat h2{
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    padding-left:8px;
+    padding-right:8px;
+}
+.chat h3{
+    color:#AAAAAA;
+}
+
+.chat b{
+    font-weight: 700;
+}
+
+
+footer{
+    width:375px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+.textbox{
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding: 0 18px;
+    height: 80px;
+    width:100%;
+}
+
+input{
+    width: 90%;
+    border:none;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+input::placeholder{
+    color:black;
+}
+input:focus{
+    outline: none;
+}
+
+.textbox ion-icon{
+    width:26px;
+    height:26px;
+}
