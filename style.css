@@ -7,6 +7,7 @@
 
 body{
     background-color: #f5f5f5;
+    width: 375px;
 }
 
 header{
@@ -38,17 +39,25 @@ main{
     width: 375px;
     font-size: 14px;
     line-height: 16px;
-    
+    overflow-x:hidden;
+    overflow-y:scroll;
 }
 
 .chat{
     width:100%;
     min-height:40px;
     border-radius: 2px;
-    display: flex;
+    display:flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-bottom:4px;
     padding: 4px 8px;
+    
+}
+
+.chatfromuser{
+    display:flex;
+    flex-wrap: wrap;
 }
 
 .enter{
@@ -71,6 +80,9 @@ main{
 }
 .chat h3{
     color:#AAAAAA;
+    font-style: normal;
+    display: flex;
+    align-items: center;
 }
 
 .chat b{
@@ -84,6 +96,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
     /* margin: 0 auto; */
 }
 .textbox{
@@ -99,7 +112,6 @@ footer{
 input{
     width: 90%;
     border:none;
-    font-style: italic;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -109,6 +121,7 @@ input{
 
 input::placeholder{
     color:black;
+    font-style: italic;
 }
 input:focus{
     outline: none;
