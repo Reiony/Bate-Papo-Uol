@@ -70,7 +70,7 @@ function showMessages(value){
             </div>
             <h2>${element.text}</h2>
         </div>`
-        } else if (element.type==="private_message" && element.to===nameInput){
+        } else if (element.type==="private_message" && (element.to===nameInput || element.from===nameInput)){
             buscador.innerHTML+= `<div class="chat private">
             <div class="chatfromuser">
                 <h2><h3>(${element.time})</h3>&nbsp <b>${element.from}</b>&nbspreservadamente para&nbsp<b>${element.to}</b>:&nbsp${element.text}</h2>
@@ -103,18 +103,17 @@ function makeitEnter(){
     }
   });
 }
-/* Fim do Bonus */
-
 makeitEnter();
+/* Fim do Bonus */
 function sendMessage(){
     getMessage=document.querySelector('input').value;
     putting=document.getElementById("323");
 
     PacoteMensagem = { 
         from: nameInput,
-        to: "Luquinhas",
+        to: "Todos",
         text: getMessage,
-        type: "private_message"
+        type: "message"
     }
     paperplanesend=axios.post("https://mock-api.driven.com.br/api/v6/uol/messages",PacoteMensagem);
     paperplanesend.then(MandeiMensagem);
